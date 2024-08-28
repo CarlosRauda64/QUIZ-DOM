@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #313e51;
+    --secondary-color: #3c4d67;
+    --white: #ffff;
+    --black: #0000;
+}
+
+body{
+    background-color: var(--primary-color);
+    color:var(--white);
+    background-image: url(/img/pattern-background-desktop-dark.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+.container-main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 6rem;
+    height: 80vh;
+    padding: 0rem 2rem 0rem 3rem;
+}
+
+.quiz{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:3rem
+}
+
+.title{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.indications{
+    font-size: 21px;
+}
+
+.start{
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem;
+    width: 30vw;
+    color: var(--white);
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
+    border-color: var(--secondary-color);
+}
+
+.options-subject{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem;
+    width: 30vw;
+    color: var(--white);
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
+    border-color: var(--secondary-color);
+}
+
+.submit{
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem;
+    width: 30vw;
+    color: var(--white);
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
+    border-color: var(--secondary-color);
+}
+
+.img-option{
+    height: 20%;
+    width: 20%;
+    object-fit: cover;
+}
+
+/* Clases que serviran para el JavaScript */
+.invisible{
+    opacity: 0%;
+    transition: opacity 0.3s ease;
+}
+
+.visible{
+    opacity: 100%;
+    transition: opacity 0.3s ease;
+}

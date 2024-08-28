@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="container-header">
+        <h1>Kodigo FSJ24-B GRUPO 5</h1>
+    </header>
+    <main class="container-main">
+        <div class="quiz">
+            <h1 class="title">Bienvenido a una Prueba sobre Desarrollo Web </h1>
+            <p class="indications">Selecciona un tema para comenzar</p>
+            <button class="start" id="start" type="button" onclick="toggle()">Comenzar</button>
+        </div>
+        <div class="options-subject">
+            <button class="option invisible">
+                HTML
+            </button>
+            <button class="option invisible">
+                CSS
+            </button>
+            <button class="option invisible">
+                JS
+            </button>
+            <button class="submit invisible" id="submit" onclick="submitAnswer()">
+                Submit
+            </button>
+        </div>
+    </main>
+    <script src="./js/main.js"></script>
+</body>
+</html>
