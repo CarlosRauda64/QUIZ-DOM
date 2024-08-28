@@ -8,26 +8,26 @@
 </head>
 <body>
     <header class="container-header">
-        <h1>Kodigo FSJ24-B GRUPO 5</h1>
+        <h1>Kodigo FSJ24-B // Carlos Rauda</h1>
     </header>
     <main class="container-main">
         <div class="quiz">
-            <h1 class="title">Bienvenido a una Prueba sobre Desarrollo Web </h1>
-            <p class="indications">Selecciona un tema para comenzar</p>
-            <button class="start" id="start" type="button" onclick="toggle()">Comenzar</button>
+            <h1 class="title" id="title">Bienvenido a una Prueba sobre Cultura General </h1>
+            <p class="indications" id="indications">Click en el botón para comenzar</p>
+            <button class="start" id="start" type="button" onclick="toggleStart()">Comenzar</button>
         </div>
         <div class="options-subject">
-            <button class="option invisible">
+            <button class="option invisible" disabled>
                 HTML
             </button>
-            <button class="option invisible">
+            <button class="option invisible" disabled>
                 CSS
             </button>
-            <button class="option invisible">
+            <button class="option invisible" disabled>
                 JS
             </button>
-            <button class="submit invisible" id="submit" onclick="submitAnswer()">
-                Submit
+            <button class="submit invisible" id="submit" onclick="submitAnswer()" disabled>
+                Responder
             </button>
         </div>
     </main>
